@@ -343,8 +343,8 @@ strong, b {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -393,8 +393,19 @@ strong, b {
 }
 
 .mobile-nav-link:hover,
+.mobile-nav-link:focus,
 .mobile-nav-link.active {
   color: var(--text-gold);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+/* Ensure touch-friendly tap targets for mobile */
+@media (max-width: 1023px) {
+  .mobile-nav-link {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* ============================================
@@ -526,8 +537,9 @@ strong, b {
 /* Primary Button - Gold */
 .btn-primary {
   background: var(--bg-gold-gradient);
-  color: var(--text-on-gold);
+  color: #0D0D1A;
   box-shadow: var(--shadow-gold);
+  font-weight: var(--font-bold);
 }
 
 .btn-primary:hover {
@@ -1358,6 +1370,56 @@ strong, b {
   );
   background-size: 200% 100%;
   animation: shimmer 3s infinite linear;
+}
+
+/* ============================================
+   Form Elements
+   ============================================ */
+input,
+select,
+textarea {
+  font-family: var(--font-primary);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-color: var(--color-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* Focus visible for keyboard navigation */
+.btn:focus-visible,
+.nav-link:focus-visible,
+.mobile-nav-link:focus-visible,
+.card:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Skip to main content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: var(--text-on-gold);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  z-index: 9999;
+  font-weight: var(--font-semibold);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
 }
 
 /* ============================================
