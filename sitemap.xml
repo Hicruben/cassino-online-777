@@ -85,4 +85,26 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://cassino-online-777.com.br/politica-privacidade.html</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://cassino-online-777.com.br/termos-uso.html</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://cassino-online-777.com.br/contato.html</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
 </urlset>
