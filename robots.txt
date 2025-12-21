@@ -1,11 +1,11 @@
 # Robots.txt for Cassino Online 777
-# https://cassino-online-777.com.br
+# https://cassinoonline777.net
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://cassino-online-777.com.br/sitemap.xml
+Sitemap: https://cassinoonline777.net/sitemap.xml
 
 # Disallow admin and private directories
 Disallow: /admin/
